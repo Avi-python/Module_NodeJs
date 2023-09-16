@@ -1,0 +1,12 @@
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    console.log("hi");
+    res.end("end page");
+});
+
+server.listen(5000,() => {
+    console.log("Listening to 127.0.0.1:5000");
+}); // async
+
+console.log("HI");
