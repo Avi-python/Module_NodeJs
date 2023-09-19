@@ -1,6 +1,6 @@
 const http = require('http');
 
-const server = http.createServer((request, response) =>
+const server = http.createServer((request, response) => // request 是一個可讀流，response 是一個可寫流。
 {
     if(request.url === '/')
     {
